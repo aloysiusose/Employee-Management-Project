@@ -3,7 +3,8 @@ package com.aloysius.EmployeeManagementSystem.Controller;
 import com.aloysius.EmployeeManagementSystem.DTO.EmployeeDTO;
 import com.aloysius.EmployeeManagementSystem.DTO.EmployeeMapper;
 import com.aloysius.EmployeeManagementSystem.Model.Employee;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +13,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/")
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 public class EmployeeController {
     @Autowired
     EmployeeMapper employeeMapper;

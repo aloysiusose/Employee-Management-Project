@@ -22,7 +22,6 @@ public class Employee {
     private String gradeLevel;
     @Enumerated(EnumType.STRING)
     private Contract_type contractType;
-
     @Enumerated(EnumType.STRING)
     private Department department;
 
